@@ -8,24 +8,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'svara', root_path, class: 'navbar-brand' %>
+      <%= image_tag 'svara.png' , width: '100px'  %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="SØK">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="SØK" class="btn btn-default">SØK</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <% if(!user_signed_in?) %>
           <li>
-            <%= link_to 'Sign Up', new_user_registration_path %>
+            <%= link_to 'Registrer deg', new_user_registration_path %>
           </li>
           <li>
-            <%= link_to 'Log In', new_user_session_path %>
+            <%= link_to 'Log inn', new_user_session_path %>
           </li>
         <% else %>
           <li class="dropdown">
