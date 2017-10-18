@@ -12,7 +12,17 @@
     </tr>
   </thead>
 
-  <tbody>
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
+   <tbody>
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.body %></td>
@@ -24,6 +34,13 @@
       </tr>
     <% end %>
   </tbody>
+  
+  
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+
+
 </table>
 
 <br>
