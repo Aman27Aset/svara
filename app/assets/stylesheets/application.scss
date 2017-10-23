@@ -1,6 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+body {
+    background-color: #ADD8E6;
+}
+
+
+
+.jumbotron {
+    max-width:500px;
+    margin:20px auto;
+    background-color :#FFF;
+    font-size: 25px;
+    font-weight: 700 ;
+    font-style: oblique;
+}
+
+
+.navbar {
+    background-color :#ff0505;
+}
+
+
+
+
+
+
+
 .footer {
   position: relative;
   right: 0;
