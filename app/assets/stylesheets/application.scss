@@ -4,6 +4,7 @@
 
 body {
     background-color: #ADD8E6;
+    background-position: center;
 }
 
 
@@ -19,10 +20,14 @@ body {
 
 
 .navbar {
-    background-color :#ff0505;
+    background-color:#fff;
+    
 }
 
 
+.btn:hover {
+    background-color: green;
+}
 
 
 
