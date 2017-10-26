@@ -17,9 +17,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="SØK">
+        
         </div>
-        <button type="SØK" class="btn btn-default">SØK</button>
+        
       </form>
       <ul class="nav navbar-nav navbar-right">
         <% if(!user_signed_in?) %>
@@ -31,7 +31,9 @@
           </li>
         <% else %>
         <li><%= link_to 'Spør Spørsmål', new_question_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff' %></li>
-    
+        
+        
+     <li><%= link_to 'See Spørsmål', questions_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff' %></li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %> <span class="caret"></span></a>

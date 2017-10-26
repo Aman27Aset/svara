@@ -1,64 +1,54 @@
-# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
 
 en:
-  devise:
-    confirmations:
-      confirmed: "Your email address has been successfully confirmed."
-      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
-      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
-    failure:
-      already_authenticated: "You are already signed in."
-      inactive: "Your account is not activated yet."
-      invalid: "Invalid %{authentication_keys} or password."
-      locked: "Your account is locked."
-      last_attempt: "You have one more attempt before your account is locked."
-      not_found_in_database: "Invalid %{authentication_keys} or password."
-      timeout: "Your session expired. Please sign in again to continue."
-      unauthenticated: "You need to sign in or sign up before continuing."
-      unconfirmed: "You have to confirm your email address before continuing."
-    mailer:
-      confirmation_instructions:
-        subject: "Confirmation instructions"
-      reset_password_instructions:
-        subject: "Reset password instructions"
-      unlock_instructions:
-        subject: "Unlock instructions"
-      email_changed:
-        subject: "Email Changed"
-      password_change:
-        subject: "Password Changed"
-    omniauth_callbacks:
-      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
-      success: "Successfully authenticated from %{kind} account."
-    passwords:
-      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
-      send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
-      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
-      updated: "Your password has been changed successfully. You are now signed in."
-      updated_not_active: "Your password has been changed successfully."
-    registrations:
-      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
-      signed_up: "Welcome! You have signed up successfully."
-      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
-      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
-      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
-      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
-      updated: "Your account has been updated successfully."
-    sessions:
-      signed_in: "Signed in successfully."
-      signed_out: "Signed out successfully."
-      already_signed_out: "Signed out successfully."
-    unlocks:
-      send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
-      send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
-      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
   errors:
     messages:
-      already_confirmed: "was already confirmed, please try signing in"
-      confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
-      expired: "has expired, please request a new one"
-      not_found: "not found"
-      not_locked: "was not locked"
+      expired: "har utløpt, vennligst få en ny en"
+      not_found: "ikke funnet"
+      already_confirmed: "har allerede blitt bekreftet. Prøv å logg inn."
+      not_locked: "var ikke låst"
       not_saved:
-        one: "1 error prohibited this %{resource} from being saved:"
-        other: "%{count} errors prohibited this %{resource} from being saved:"
+        one: "Én feil gjorde at %{resource} ikke kunne lagres:"
+        other: "%{count} feil gjorde at %{resource} ikke kunne lagres:"
+  
+  devise:
+    failure:
+      already_authenticated: 'Du er allerede logget inn.'
+      unauthenticated: 'Du må logge inn eller registrere deg for å kunne fortsette.'
+      unconfirmed: 'Du må bekrefte kontoen din for å kunne fortsette.'
+      locked: 'Din konto er låst.'
+      invalid: 'Epostadresse eller passord er ikke gyldig.'
+      invalid_token: 'Ugyldig autentiserings-token.'
+      timeout: 'Din sesjon er utløpt. Logg inn igjen for å kunne fortsette.'
+      inactive: 'Din konto er ikke aktivert.'
+    sessions:
+      signed_in: 'Du er nå innlogget.'
+      signed_out: 'Du er nå logget ut.'
+    passwords:
+      send_instructions: 'Du vil snart motta en epost med instruksjoner for å nullstille passordet ditt.'
+      updated: 'Ditt passord er endret og du er nå innlogget.'
+      send_paranoid_instructions: 'Hvis epostadressen din finnes i vår database vil du motta en epost med instruksjoner for å nullstille passordet ditt.'
+    confirmations:
+      send_instructions: 'Du vil snart motta en epost med instruksjoner for å aktivere din konto.'
+      send_paranoid_instructions: 'Hvis epostadressen din finnes i vår database vil du motta en epost med instruksjoner for å aktivere din konto.'
+      confirmed: 'Din konto er aktivert og du er nå innlogget.'
+    registrations:
+      signed_up: 'Velkommen! Din registrering er vellykket.'
+      signed_up_but_unconfirmed: 'En epost med en aktiveringslink er sent til din epostadresse.  Vennligst klikk på linken for å aktivere din konto.'
+      signed_up_but_inactive: 'Du er registrert. Men vi kan ikke logge deg på siden kontoen din ennå ikke er aktiv.'
+      signed_up_but_locked: 'Du er registrert. Men vi kan ikke logge deg på siden kontoen din er låst.' 
+      updated: 'Din profil er oppdatert.'
+      destroyed: 'Farvel. Din konto er nå slettet.'
+    unlocks:
+      send_instructions: 'Du vil snart motta en epost med instruksjon for å gjenåpne din konto.'
+      unlocked: 'Din konto er gjenåpnet og du er nå innlogget.'
+      send_paranoid_instructions: 'Hvis kontoen din eksisterer vil du motta en epost med instruksjoner for å låse den opp i løpet av noen minutter.'
+    omniauth_callbacks:
+      success: 'Vellykket autorisering fra %{kind}.'
+      failure: 'Kunne ikke autorisere deg fra %{kind} fordi "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Bekreftelsesinstruksjoner'
+      reset_password_instructions:
+        subject: 'Nullstilling av passord'
+      unlock_instructions:
+        subject: 'Gjenåpning av konto'
