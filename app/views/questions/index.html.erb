@@ -7,7 +7,7 @@
 
     <% @questions.each do |question| %>
     <div class="jumbotron" style="margin: 20px auto; max-width: 500px">
-        <%= question.body %>
+        <%= link_to question.body, question %>
         <%= question.category %>
         <%= question.user.username %>
         <% if current_user.id == question.user.id%>
