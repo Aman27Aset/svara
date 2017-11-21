@@ -20,8 +20,20 @@
         
         </div>
         
+        
       </form>
       <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fag <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Matte", k_matte_path %></li>
+            <li><%= link_to "Samfunnsfag", k_samfunnsfag_path %></li>
+            <li><%= link_to "Engelsk", k_engelsk_path %></li>
+            <li><%= link_to "RLE", k_rle_path %></li>
+            <li><%= link_to "Norsk", k_norsk_path %></li>
+            <li><%= link_to "Naturfag", k_naturfag_path %></li>
+          </ul>
+        </li>
         <% if(!user_signed_in?) %>
           <li>
             <%= link_to 'Registrer deg', new_user_registration_path %>
@@ -32,7 +44,7 @@
         <% else %>
         <li><%= link_to 'Spør Spørsmål', new_question_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff' %></li>
         
-     <li><%= link_to 'Se Spørsmål', questions_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff' %></li>
+     <li><%= link_to 'Se Spørsmål', questions_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff; margin-left: 15px' %></li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %> <span class="caret"></span></a>

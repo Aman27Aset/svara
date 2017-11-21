@@ -1,6 +1,8 @@
-<p id="notice"><%= notice %></p>
+<center>
+   
+<p id="notice"><%= notice %> </p>
 
-<h1><%= @question.body %></h1>
+<h1 style="color: #ff0000"><%= @question.body %></h1>
 
 <h3>Asked by <%= @question.user.username %> in <%= @question.category %></h3>
 
@@ -9,3 +11,5 @@
 <% @answers.each do |answer| %>
   <h4><%= answer.body %> posted by <%= answer.user.username %></h4>
 <% end %>
+</div>
+</center>
