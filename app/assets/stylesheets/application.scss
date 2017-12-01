@@ -1,3 +1,4 @@
+@import 'trix';
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -6,7 +7,7 @@
 
 
 body {
-    background-color: #ADD8E6;
+    background-color: #fff;
     background-position: center;
 }
       
@@ -17,46 +18,7 @@ body {
         padding: 0;
     }
  
-    #custom-search-input .search-query {
-        padding-right: 3px;
-        padding-right: 4px \9;
-        padding-left: 3px;
-        padding-left: 4px \9;
-        /* IE7-8 doesn't have border-radius, so don't indent the padding */
- 
-        margin-bottom: 0;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-    }
- 
-    #custom-search-input button {
-        border: 0;
-        background: none;
-        /** belows styles are working good */
-        padding: 2px 5px;
-        margin-top: 2px;
-        position: relative;
-        left: -28px;
-        /* IE7-8 doesn't have border-radius, so don't indent the padding */
-        margin-bottom: 0;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        color:#D9230F;
-    }
- 
-    .search-query:focus + button {
-        z-index: 3;   
     
-}
-.question a {
-    color: blue;
-}
-      
-.question-category{
-    color: red;
-}     
 
       
       
@@ -83,12 +45,9 @@ html {
 
 
 .jumbotron {
-    max-width:500px;
+    max-width:600px;
     margin:20px auto;
     background-color :#FFF;
-    font-size: 25px;
-    font-weight: 700 ;
-    font-style: oblique;
 }
 
 

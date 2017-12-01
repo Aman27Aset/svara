@@ -4,12 +4,15 @@
 
 <h1 style="color: #ff0000"><%= @question.body %></h1>
 
-<h3>Asked by <%= @question.user.username %> in <%= @question.category %></h3>
+<h3>Spurt av <%= @question.user.username %> in <%= @question.category %></h3>
 
-<%= link_to 'Give an Answer', new_question_answer_path(@question) %>
+<%= link_to 'Svar', new_question_answer_path(@question) %>
 
 <% @answers.each do |answer| %>
-  <h4><%= answer.body %> posted by <%= answer.user.username %></h4>
+    <div style="background-color: #fff; max-width: 500px; text-align: left; padding: 20px 20px; margin: 10px 10px">
+        <p><%= sanitize answer.body %></p>
+        <h4>Besvart av <%= answer.user.username %></h4>
+    </div>
 <% end %>
 </div>
 </center>

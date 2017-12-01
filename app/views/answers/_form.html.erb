@@ -1,7 +1,7 @@
 <center>
 <%= form_for([@answer.question, @answer]) do |form| %>
 <div class="jumbotron">
-  <div class="container" style="max-width: 300px">
+  <div class="container" style="max-width: 600px">
   
   <% if answer.errors.any? %>
     <div id="error_explanation">
@@ -16,8 +16,8 @@
   <% end %>
 
   <div class="form-group">
-    
-    <%= form.text_area :body, class: "form-control input-lg" %>
+    <%= form.hidden_field :body, class: 'form-control input-lg', id: 'answer_body' %>
+    <trix-editor style="background-color: #fff; min-height: 300px; text-align: left" input="answer_body"></trix-editor>
   </div>
 
   

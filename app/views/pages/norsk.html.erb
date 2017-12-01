@@ -4,13 +4,13 @@
 <div class="jumbotron">
   <div class="container">
     <h3><%= link_to question.body, question %></h3>
-    <h4>Asked by <%= question.user.username %> in <span class="question-category"><%= question.category %></h4></span> 
+    <h4>Spurte av <%= question.user.username %> in <span class="question-category"><%= question.category %></h4></span> 
     
-    <%= link_to 'Give an Answer', new_question_answer_path(question), class: "btn btn-danger btn-sm" %>
-    <%= link_to 'See Answers',question, class: "btn btn-danger btn-sm" %>
+    <%= link_to 'Svar', new_question_answer_path(question), class: "btn btn-danger btn-sm" %>
+    <%= link_to 'se på svarene',question, class: "btn btn-danger btn-sm" %>
     <% if current_user.id == question.user.id %>
       <div>
-        <%= link_to 'Edit', edit_question_path(question), class: 'btn btn-warning btn-xs' %>
+        <%= link_to 'edit', edit_question_path(question), class: 'btn btn-warning btn-xs' %>
         <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-warning btn-xs' %>
       </div>
     <% end %>  

@@ -19,6 +19,8 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 
+gem 'trix'
+gem 'trix_rails'
 
 
 group :development, :test do
