@@ -11,12 +11,14 @@
     
     <%= link_to 'Svar', new_question_answer_path(question), class: "btn btn-danger btn-lg" %>
     <%= link_to 'Se på svarene',question, class: "btn btn-success btn-lg" %>
+    <% if user_signed_in? %>
     <% if current_user.id == question.user.id %>
       <div>
         <%= link_to 'edit', edit_question_path(question), class: 'btn btn-warning btn-xs' %>
         <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-warning btn-xs' %>
       </div>
     <% end %>  
+    <% end %>
   </div>
 </div>
 <% end %>
