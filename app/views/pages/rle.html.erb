@@ -7,7 +7,7 @@
 <div class="jumbotron">
   <div class="container">
     <h3><%= link_to question.body, question %></h3>
-    <h4>Spurte av <%= question.user.username %> in <span class="question-category"><%= question.category %></h4></span> 
+    <h4>spurt av <%= question.user.username %> in <span class="question-category"><%= question.category %></h4></span> 
     
     <%= link_to 'Svar', new_question_answer_path(question), class: "btn btn-danger btn-sm" %>
     <%= link_to 'se på svarene',question, class: "btn btn-danger btn-sm" %>
