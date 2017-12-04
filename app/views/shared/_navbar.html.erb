@@ -36,7 +36,7 @@
         </li>
         <% if(!user_signed_in?) %>
           <li>
-            <%= link_to 'Se spørsmål', questions_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff; margin-left: 15px' %>
+    
              
             <li>
 <%= link_to 'Registrer deg', new_user_registration_path %>
@@ -47,7 +47,7 @@
           </li>
         <% else %>
         <li><%= link_to 'Spør Spørsmål', new_question_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff' %></li>
-        
+       <li><%= link_to 'Se spørsmål', questions_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff; margin-left: 15px' %></li>
     
 
           <li class="dropdown">
@@ -59,8 +59,9 @@
                
             </ul>
           </li>
-          <%= link_to 'Se Spørsmål', questions_path, class: 'btn btn-primary navbar-btn', style: 'padding: 5px 8px; color: #fff; margin-left: 15px' %>
+          
         <% end %>
+        
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
