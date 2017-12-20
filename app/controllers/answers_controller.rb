@@ -6,6 +6,7 @@ class AnswersController < ApplicationController
   # GET /answers.json
   def index
     @answers = Answer.all
+    @answers = Answer.all.reverse_order
   end
 
   # GET /answers/1
