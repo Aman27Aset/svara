@@ -9,7 +9,7 @@
 <%= link_to 'Svar', new_question_answer_path(@question),class: "btn btn-danger btn-lg" %>
 
 <% @answers.each do |answer| %>
-    <div style="background-color: #fff; max-width: 500px; text-align: left; padding: 20px 20px; margin: 10px 10px">
+    <div style="background-color: #fff; max-width: 500px; text-align: left; padding: 20px 20px; margin: 10px 10px ;border: 5px solid red;">
         <p><%= sanitize answer.body %></p>
         <h4>Besvart av <%= answer.user.username %></h4>
     </div>
