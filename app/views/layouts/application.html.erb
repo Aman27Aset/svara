@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Svara</title>
-   
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="google-site-verification" content="grqqO-Ewe7z8_2MjZoX6zSU7YVAG9o46oM1UrwA90uI" />
+    <meta name="google-site-verification" content="grqqO-Ewe7z8_2MjZoX6zSU7YVAG9o46oM1UrwA90uI" />
   </head>
 
 
   <body>
- 
+    <%= render "shared/navbar" %>
  
     <%= yield %>
     
     
- 
+    <div class="footer" style="margin-bottom: -10px; padding-top: 10px; padding-bottom: 10px">
+	    <%= render "shared/footer" %>
+	    </div>
+	
   </body>
 </html>
