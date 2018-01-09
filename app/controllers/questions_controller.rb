@@ -8,6 +8,7 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all.reverse_order
+    
   end
 
   # GET /questions/1
